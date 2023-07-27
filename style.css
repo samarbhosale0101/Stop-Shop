@@ -1,129 +1,179 @@
-/* Add your CSS styles here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
+  background: linear-gradient(to bottom, #f9f9f9, #f1f1f1);
+  /
+  background-color: #f1f1f1;
   
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav img {
-    max-height: 50px;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  .left img{
-    width : 100px;
-    height: 50px;
-  }
-  .hero{
-    font-size: 24px;
-    font-family: "Georgia", sans-serif;
-  }
-  .items {
-    text-align: center;
-  }
-  
-  .items h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .item img {
-    max-width: 100%;
-    height: 200px; /* Adjust the height for proper image display */
-    object-fit: cover; /* Ensure the images fill the container */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .item h3 {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .item p {
-    font-size: 16px;
-  }
-  
-  /* Additional styles for the new sections */
-  .kids-launches, .home-decors {
-    text-align: center;
-  }
-  
-  .kids-launches h2, .home-decors h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .kids-launches .image-gallery, .home-decors .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .kids-launches .item img, .home-decors .item img {
-    max-width: 100%;
-    height: 200px; /* Adjust the height for proper image display */
-    object-fit: cover; /* Ensure the images fill the container */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .kids-launches .item h3, .home-decors .item h3 {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .kids-launches .item p, .home-decors .item p {
-    font-size: 16px;
-  }
-  body {
-    /* Replace these colors with your desired gradient colors */
-    background-image: linear-gradient(to bottom, #ffcc00, #ff3366);
-    /* Optional: You can set a fallback color in case gradients are not supported */
-    background-color: #ff3366;
-    /* Set other styles for the body as needed */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  color: #333; 
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  max-height: 50px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+
+.hero {
+  font-size: 24px;
+  font-family: "Georgia", serif;
+  color: #333; 
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.items {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.items h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  max-width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.item p {
+  font-size: 16px;
+  color: #777;
+}
+
+
+.kids-launches,
+.home-decors {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.kids-launches h2,
+.home-decors h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+.kids-launches .image-gallery,
+.home-decors .image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.kids-launches .item,
+.home-decors .item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kids-launches .item img,
+.home-decors .item img {
+  max-width: 100%;
+  height: 200px; 
+  border-radius: 10px;
+}
+
+.kids-launches .item h3,
+.home-decors .item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.kids-launches .item p,
+.home-decors .item p {
+  font-size: 16px;
+  color: #777;
+}
+
+
+#men-section,
+#women-section,
+#kids-section,
+#accessories-section,
+#lifestyle-section {
+  display: none;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
