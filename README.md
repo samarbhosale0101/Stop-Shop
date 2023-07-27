@@ -1,1 +1,1 @@
-# E-Commerce
+Stop&Shop Online Shopping Project
